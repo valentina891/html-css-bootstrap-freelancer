@@ -2,11 +2,34 @@ body {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-header {
-    background-color: #1abc9c;
-    padding-top: 100px;
-    padding-bottom: 100px;
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.boo_navbar {
+    height: 70px;
+    background-color: #2c3e50;
+    border: #2c3e50;
+}
+
+.boo_navbar a.navbar-brand,
+.boo_navbar .nav li a {
     color: white;
+}
+
+.navbar-header a.navbar-brand {
+    font-size: 25px;
+}
+
+/* SEZIONE 1 */
+
+#banner {
+    color: white;
+    margin-top: 60px;
+    background-color: #1abc9c;
+    /* font-weight: bold; */
 }
 
 .row_start img {
@@ -21,44 +44,107 @@ header {
     font-weight: 700;
 }
 
-.row_start p {
+.boo_star .glyphicon-star {
+    font-size: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.boo_star::before,
+.boo_star::after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    background-color: white;
+    border-radius: 1px;
+    display: inline-block;
+    position: relative;
+    bottom: 15px;
+}
+
+.row_start h3 {
     font-size: 20px;
-    font-weight: 10;
+    font-weight: 10px;
 }
 
-/* SEZIONE 1 */
+/* SEZIONE 2 */
 
-section {
-    padding-top: 100px;
-    padding-bottom: 50px;
+#portfolio {
     color: #2c3e50;
-}
-
-.col-xs-6.col-md-4 {
-    margin-bottom: 50px;
 }
 
 h2 {
     font-size: 40px;
 }
 
-.row_portfolio img {
-    max-width: 100%;
+.boo_star-portfolio::before,
+.boo_star-portfolio::after  {
+    background-color: #2c3e50;
 }
 
-/* SEZIONE 2 */
+.col-xs-6.col-md-4 {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
 
-[class$="about"] {
+.boo_portfolio-img {
+    position: relative;
+}
+
+.boo_portfolio-overlay {
+    display: none;
+}
+
+.boo_portfolio-img:hover .boo_portfolio-overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 187, 156, 0.7);
+    border-radius: 10px;
+}
+
+.boo_portfolio-overlay span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+}
+
+/* SEZIONE 3 */
+
+#about {
     background-color: #1abc9c;
     color: white;
     font-size: 18px;
 }
+
+/* .col-md-6 .col-md-3 {
+    width: 30%;
+} */
+
+ #about p {
+     padding-top: 30px;
+     margin-bottom: 30px;
+ }
 
 .row button {
     padding: 17px 20px;
     color: white;
     background-color: #1abc9c;
     border: 1px solid white;
+}
+
+/* SEZIONE 4 */
+
+#contact {
+    color: #2c3e50;
+}
+
+.boo_star-contact {
+    padding-bottom: 40px;
 }
 
 .form-group label {
@@ -70,11 +156,24 @@ h2 {
     height: 200px;
 }
 
+/* FOOTER */
+
 footer {
     background-color: #2c3e50;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.circle{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    border: 1px solid white;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 5px;
 }
 
 .container-fluid_copyright {
